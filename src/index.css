@@ -1,13 +1,221 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0),
+    rgba(66, 125, 157)
+  );
+}
+
+a {
+  display: inline-block;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 5rem;
+  margin: 5%;
+  margin-top: 2%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  margin-top: 1rem;
+}
+.row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin: 2rem;
+  display: inline-block;
+  height: 17rem;
+  width: 17rem;
+  border: 1rem solid #fef2bf;
+  border-radius: 20%;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(1) translateY(-0.1rem);
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0), rgba(255, 0, 0));
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.button {
+  display: none;
+  padding: 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: rgb(26, 22, 8);
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.button:active {
+  opacity: 0;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .button {
+    display: inline-block;
+  }
+  .row:not(:first-child) {
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  a {
+    font-size: 2.5rem;
+  }
+  .button {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  footer a {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 672px) {
+  html {
+    font-size: 43.7%;
+  }
+  a {
+    font-size: 3rem;
+  }
+  .button {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 590px) {
+  html {
+    font-size: 37.5%;
+  }
+  a {
+    font-size: 3em;
+  }
+  .btn {
+    height: 20rem;
+    width: 20rem;
+  }
+  .row:not(:first-child) {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 30%;
+  }
+  a {
+    font-size: 3rem;
+  }
+  .btn {
+    height: 20rem;
+    width: 20rem;
+  }
+  #level-title {
+    margin: 5%;
+    margin-top: 10rem;
+    color: #fef2bf;
+  }
+  .button {
+    padding: 5rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 25%;
+  }
+  #level-title {
+    margin-bottom: 10rem;
+  }
+  .row:not(:first-child) {
+    margin-bottom: 10rem;
+  }
+  a {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 383px) {
+  html {
+    font-size: 20%;
+  }
+  #level-title {
+    margin-bottom: 16rem;
+  }
+  .row:not(:first-child) {
+    margin-bottom: 16rem;
+  }
+  a {
+    font-size: 5rem;
+  }
 }

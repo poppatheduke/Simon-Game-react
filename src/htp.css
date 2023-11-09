@@ -1,0 +1,39 @@
+body{
+  text-align: center;
+  background-color:black;
+}
+
+.heading{
+  text-decoration: underline;
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+p{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  color: white;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 480px) {
+
+ h1{
+   font-size: 1.2rem;
+   margin-top: 25px;
+   line-height: 1.2;
+ }
+
+p{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+
+
+}
