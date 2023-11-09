@@ -80,7 +80,7 @@ function SimonGame(props) {
                     document.querySelector("body").classList.add("game-over");
                 }, 0);
                 setTimeout(() => {
-                    document.querySelector("#level-title").innerHTML = "Click On Start To Begin";
+                    document.querySelector("#level-title").innerHTML = "Press Any Key to Start";
                     document.querySelector("body").classList.remove("game-over");
 
                 }, 800);
