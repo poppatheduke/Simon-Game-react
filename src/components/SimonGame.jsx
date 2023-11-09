@@ -32,11 +32,9 @@ function SimonGame(props) {
 
 
     //functions
-    document.addEventListener("keypress", function() {
-        if (!playing) {
-            setPlaying(true)
-            addNewColor();
-        }
+    document.addEventListener("keypress", function(event) {
+        var button = document.querySelector(".button");
+        button.click();
     });
 
     function addNewColor() {
