@@ -17,14 +17,28 @@ function Help() {
 
     return (<div><h1 className='heading'>How to play simon game</h1>
 
-        <p>First Press the Start button, immediately you do that
-            you realize one of the button flashes. Press that button.
-            After pressing that button another button flashes, so now it means you hav two flased buttons
-            then you will have to press those two buttons after pressing those two buttons you realize a third button flashes
-            it maybe the same colour as before or not. You keep doing this to increase your Level.
-            when you disrupt the pattern its GAMEOVER.
+        <p>Welcome to the Simon game—a game that tests your memory and reflexes!
+            The objective is simple: pay attention to the sequence of flashing buttons and repeat it.
 
-            Have Fun!
+            It all starts with one button lighting up.
+            Your task is to press that button.
+            After successfully pressing it, a new button joins the sequence,
+            and you need to replicate the entire pattern by pressing the original button and the newly lit one.
+            As you progress,
+            more buttons will flash in a specific order,
+            and your challenge is to remember and reproduce the sequence accurately.
+
+            The game keeps getting more exciting as the sequences grow longer,
+            testing your ability to recall and replicate complex patterns.
+            Be prepared for a twist—sometimes the new button in the sequence will be the same color as before,
+            and other times it'll be a different one, adding an extra layer of challenge.
+
+            The key is to stay focused and keep pace with the increasing complexity.
+            However, be cautious!
+            If you make a mistake and disrupt the pattern,
+            it's GAME OVER. So, sharpen your memory skills, embrace the challenge,
+            and most importantly, have fun!
+
         </p>
         <a href="#a" onClick={handleClick2}>Back &larr;</a>
         ;</div>)
