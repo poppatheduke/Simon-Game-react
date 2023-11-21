@@ -115,6 +115,8 @@ footer a {
   font-weight: 700;
   color: white;
 }
+
+
 @media (max-width: 1200px) {
   .button {
     display: inline-block;

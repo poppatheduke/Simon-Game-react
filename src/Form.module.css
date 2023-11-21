@@ -24,8 +24,6 @@ body {
 .form__items {
   margin: 0 auto;
   text-align: center;
-  
-  
 }
 .form__heading {
   font-size: 4rem;
@@ -34,10 +32,11 @@ body {
   margin-top: 6rem;
   background-image: linear-gradient(
     to left,
-    rgba(0, 0, 0),
+    rgba(25, 0, 0),
     rgba(255, 255, 255)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .heading2 {
@@ -56,9 +55,35 @@ body {
   background-color: #ddf2fd;
   border: 1px solid oldlace;
   outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
   transition: all 0.2s;
 }
+.gameover {
+  display: block;
+  margin: 1rem;
+  padding: 2rem 4rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  background-color: red;
+  border: 1px solid oldlace;
+  outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.2s;
+}
+.gameover::placeholder {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.gameover:focus::placeholder {
+  opacity: 0;
+}
+
 .form__input::placeholder {
   opacity: 1;
   transition: opacity 0.2s;
@@ -85,10 +110,14 @@ body {
 .form__button:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: black;
+  color: white;
 }
 .form__button:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-color: black;
+  color: white;
 }
 
 .form__button__register {
@@ -110,15 +139,20 @@ body {
   transform: translateY(-0.3rem);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   background-color: black;
+  color: white;
 }
 .form__button__register:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  color: white;
 }
 
 @media (max-width: 900px) {
   .form__input {
-  font-size: 3rem;
+    font-size: 3rem;
+  }
+  .gameover {
+    font-size: 3rem;
   }
 
   .form__heading {
@@ -127,16 +161,16 @@ body {
   }
 
   .form__button {
-      font-size: 3rem;
-      padding: 2rem 18.4rem;
-      margin-bottom: 10rem;
-    }
+    font-size: 3rem;
+    padding: 2rem 18.4rem;
+    margin-bottom: 10rem;
+  }
 
-    .form__button__register {
-      font-size: 3rem;
-      padding: 2rem 16.5rem;
-      margin-bottom: 10rem;
-    }
+  .form__button__register {
+    font-size: 3rem;
+    padding: 2rem 16.5rem;
+    margin-bottom: 10rem;
+  }
 }
 @media (max-width: 460px) {
   a:not(:last-child) {
@@ -144,21 +178,75 @@ body {
   }
   .form__input {
     font-size: 4rem;
-    }
+  }
+  .gameover {
+    font-size: 4rem;
+  }
   .form__heading {
     font-size: 5rem;
     margin-bottom: 5rem;
   }
 
   .form__button {
-      font-size: 4rem;
-      padding: 2rem 23.2rem;
-      margin-bottom: 10rem;
-    }
+    font-size: 4rem;
+    padding: 2rem 23.2rem;
+    margin-bottom: 10rem;
+  }
 
-    .form__button__register {
-      font-size: 4rem;
-      padding: 2rem 20.7rem;
-      margin-bottom: 10rem;
-    }
+  .form__button__register {
+    font-size: 4rem;
+    padding: 2rem 20.7rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.errmsg {
+  font-family: "Press Start 2P", cursive;
+  color: red;
+}
+
+.allset {
+  font-family: "Press Start 2P", cursive;
+  font-size: 5rem;
+  margin: 5%;
+  margin-top: 2%;
+  color: #fef2bf;
+}
+
+.offscreen {
+  display: none;
+}
+
+.arial {
+  display: flex;
+  width: 91%;
+  flex-wrap: inherit;
+  flex-direction: inherit;
+  flex-shrink: inherit;
+  margin: 1rem;
+  padding: 0.1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: black;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.arialLong {
+  position: absolute;
+  display: flex;
+  flex-wrap: inherit;
+  flex-direction: inherit;
+  flex-shrink: inherit;
+  margin: 1rem;
+  padding: 0.1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: black;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s;
 }

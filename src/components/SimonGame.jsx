@@ -32,9 +32,11 @@ function SimonGame(props) {
 
 
     //functions
-    document.addEventListener("keypress", function(event) {
+    document.addEventListener("keypress", function (event) {
         var button = document.querySelector(".button");
-        button.click();
+        if (button) {
+            button.click();
+        }
     });
 
     function addNewColor() {
@@ -181,7 +183,7 @@ function SimonGame(props) {
 
             <a href="#A" style={customStyle} onClick={handleClick}>Check Scoreboard</a>
             <footer>
-                <a href="https://black-elon-musk.netlify.app/"> Black Elon Musk 😎💰</a>
+                <a href="https://github.com/poppatheduke/">Copyright &copy; The Duke 2023</a>
             </footer>
 
         </div>
