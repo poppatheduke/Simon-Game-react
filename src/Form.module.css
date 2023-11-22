@@ -146,77 +146,6 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   color: white;
 }
-
-@media (max-width: 900px) {
-  .form__input {
-    font-size: 3rem;
-  }
-  .gameover {
-    font-size: 3rem;
-  }
-
-  .form__heading {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .form__button {
-    font-size: 3rem;
-    padding: 2rem 18.4rem;
-    margin-bottom: 10rem;
-  }
-
-  .form__button__register {
-    font-size: 3rem;
-    padding: 2rem 16.5rem;
-    margin-bottom: 10rem;
-  }
-}
-@media (max-width: 460px) {
-  a:not(:last-child) {
-    margin-bottom: 4rem;
-  }
-  .form__input {
-    font-size: 4rem;
-  }
-  .gameover {
-    font-size: 4rem;
-  }
-  .form__heading {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .form__button {
-    font-size: 4rem;
-    padding: 2rem 23.2rem;
-    margin-bottom: 10rem;
-  }
-
-  .form__button__register {
-    font-size: 4rem;
-    padding: 2rem 20.7rem;
-    margin-bottom: 10rem;
-  }
-}
-
-.errmsg {
-  font-family: "Press Start 2P", cursive;
-  color: red;
-}
-
-.allset {
-  font-family: "Press Start 2P", cursive;
-  font-size: 5rem;
-  margin: 5%;
-  margin-top: 2%;
-  color: #fef2bf;
-}
-
-.offscreen {
-  display: none;
-}
-
 .arial {
   display: flex;
   width: 91%;
@@ -250,3 +179,90 @@ body {
   text-align: center;
   transition: all 0.2s;
 }
+
+
+@media (max-width: 900px) {
+  .form__input {
+    font-size: 3rem;
+  }
+  .gameover {
+    font-size: 3rem;
+  }
+
+  .form__heading {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .form__button {
+    font-size: 3rem;
+    padding: 2rem 18.4rem;
+    margin-bottom: 10rem;
+  }
+
+  .form__button__register {
+    font-size: 3rem;
+    padding: 2rem 16.5rem;
+    margin-bottom: 10rem;
+  }
+  .arial {
+    font-size: 2rem;
+  }
+  
+  .arialLong {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 460px) {
+  a:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .form__input {
+    font-size: 4rem;
+  }
+  .gameover {
+    font-size: 4rem;
+  }
+  .form__heading {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .form__button {
+    font-size: 4rem;
+    padding: 2rem 23.2rem;
+    margin-bottom: 10rem;
+  }
+
+  .form__button__register {
+    font-size: 4rem;
+    padding: 2rem 20.7rem;
+    margin-bottom: 10rem;
+  }
+
+  .arial {
+    font-size: 3rem;
+  }
+  
+  .arialLong {
+    font-size: 3rem;
+  }
+}
+
+.errmsg {
+  font-family: "Press Start 2P", cursive;
+  color: red;
+}
+
+.allset {
+  font-family: "Press Start 2P", cursive;
+  font-size: 5rem;
+  margin: 5%;
+  margin-top: 2%;
+  color: #fef2bf;
+}
+
+.offscreen {
+  display: none;
+}
+

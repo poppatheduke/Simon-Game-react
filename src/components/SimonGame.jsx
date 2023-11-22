@@ -121,6 +121,13 @@ function SimonGame(props) {
             };
             showSequence();
         }
+
+        const score = sequence.length;
+        //Set current Highscore in localStorage
+        const currentHighScore = localStorage.getItem('highestScore') || 0;
+        if (score > currentHighScore) {
+            localStorage.setItem("highestScore", score.toString());
+        }
     }
         , [sequence])
 
@@ -149,9 +156,14 @@ function SimonGame(props) {
             default:
                 console.log(click);
         }
+
+
     }
+    const score = sequence.length;
+
+
     return (
-        <div><h1 id="level-title">{sequence.length === 0 ? "Press Any Key to Start" : "Level " + sequence.length}</h1>
+        <div><h1 id="level-title">{score === 0 ? "Press Any Key to Start" : "Level " + score}</h1>
             <div className="container">
                 <div className="row">
 
