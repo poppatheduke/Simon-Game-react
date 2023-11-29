@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
-import FormCss from '../Form.module.css'
+import FormCss from '../Form.module.css';
+import { useNavigate } from 'react-router-dom';
 
 
 function Dashboard(props) {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/");
+    }
+
+
     const [, forceUpdate] = useState();
 
     const highestScore = localStorage.getItem('highestScore') || 0;
@@ -23,7 +30,11 @@ function Dashboard(props) {
                 <button
                     className={FormCss.form__button}
                     onClick={clearHighestScore}>Reset High Score</button>
+
+                <a href=".." onClick={handleClick}>Back</a>
             </div>
+
+
         </div>
     );
 }

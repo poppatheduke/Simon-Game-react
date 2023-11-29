@@ -45,8 +45,7 @@ function SignUp(props) {
     const [matchPwdFocus, setMatchPwdFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState("");
-    const [success, setSuccess] = useState(false);
-
+    
     useEffect(() => {
         userRef.current.focus()
     }, [])

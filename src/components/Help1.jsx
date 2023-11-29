@@ -7,16 +7,14 @@ function Help() {
 
     const navigate = useNavigate();
 
-    function handleClick() {
-        navigate("/SignUp")
-    }
+ 
 
     function handleClick2() {
         navigate("/")
     }
 
-    return (<div><h1 className='heading'>How to play simon game</h1>
-
+    return (<div className={HelpCss}><h1 className='heading'>How to play simon game</h1>
+ 
         <p>Welcome to the Simon game—a game that tests your memory and reflexes!
             The objective is simple: pay attention to the sequence of flashing buttons and repeat it.
 
